@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "components": [
+    {
+      "label": "Tên Khách hàng",
+      "type": "textfield",
+      "id": "Field_08hfcpv",
+      "key": "cusName",
+      "description": "Khách hàng cá nhân/doanh nghiệp nhỏ/tiểu thương/doanh nghiệp lớn,....",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Adbooking",
+          "value": "booking"
+        },
+        {
+          "label": "Admarket",
+          "value": "market"
+        },
+        {
+          "label": "Adnetwork",
+          "value": "network"
+        },
+        {
+          "label": "SMB",
+          "value": "smb"
+        }
+      ],
+      "label": "Dịch vụ được yêu cầu",
+      "type": "select",
+      "id": "Field_0lsxl1o",
+      "key": "reqService",
+      "description": "Dịch vụ được khách hàng yêu cầu",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Ngày bắt đầu",
+      "type": "number",
+      "id": "Field_0am2act",
+      "key": "startDate",
+      "validate": {
+        "required": true,
+        "min": 1,
+        "max": 31
+      },
+      "description": "Tháng mà khách hàng chọn bắt đầu"
+    },
+    {
+      "label": "Tháng bắt đầu",
+      "type": "number",
+      "id": "Field_1522v5v",
+      "key": "startMonth",
+      "description": "Tháng mà khách hàng chọn bắt đầu",
+      "validate": {
+        "required": true,
+        "min": 1,
+        "max": 12
+      }
+    },
+    {
+      "label": "Thời gian chạy dịch vụ",
+      "type": "number",
+      "id": "Field_06vsdu1",
+      "key": "monthRun",
+      "validate": {
+        "min": 1,
+        "max": 12,
+        "required": true
+      },
+      "description": "Số lượng tháng mà khách hàng cần chạy dịch vụ"
+    },
+    {
+      "label": "Ngày kết thúc",
+      "type": "number",
+      "id": "Field_1u0x2z0",
+      "key": "endDate",
+      "description": "Ngày kết thúc dịch vụ",
+      "validate": {
+        "required": true,
+        "min": 1,
+        "max": 31
+      }
+    },
+    {
+      "label": "Tháng kết thúc",
+      "type": "number",
+      "id": "Field_064rdmm",
+      "key": "endMonth",
+      "description": "Tháng kết thúc dịch vụ",
+      "validate": {
+        "required": true,
+        "min": 1,
+        "max": 12
+      }
+    },
+    {
+      "action": "reset",
+      "label": "Reset thông tin",
+      "type": "button",
+      "id": "Field_088yweg",
+      "key": "field_1adsaij"
+    },
+    {
+      "action": "submit",
+      "label": "Chấp nhận",
+      "type": "button",
+      "id": "Field_1eyecmm",
+      "key": "field_1ivjk73"
+    }
+  ],
+  "type": "default",
+  "id": "planForm"
+}
